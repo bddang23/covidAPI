@@ -1,7 +1,7 @@
 <?php 
 /*
 	filename 	: cis355api.php
-	author   	: george corser
+	author   	: Binh DAng
 	course   	: cis355 (winter2020)
 	description	: demonstrate JSON API functions
 				  return number of new covid19 cases
