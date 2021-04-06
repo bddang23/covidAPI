@@ -51,10 +51,15 @@ function main () {
 	
 	$death_arr = array_slice($death_arr,0,10); //  top 10 highest number of deaths.
 	//print_r($death_arr);
-
-	echo "<table style>";
+	$JSONString=json_encode($death_arr);
+	$JSONObject = json_decode($JSONString);
+	echo '<b>Filtered JSON Object From $death_arr</b><br>';
+	echo var_dump($JSONObject);
+	echo '<br><br>';
+	echo "<div><b>Table With PHP Array</b>";
+	echo "<table>";
         echo "<tr>";
-		  	echo "<th></th>";
+		  	echo "<th>PHP</th>";
             echo "<th>Country</th>";
             echo "<th>Total Death Cases</th>";
 		echo "</tr>";
@@ -67,7 +72,8 @@ function main () {
 			echo "</tr>";
 			$i++;
 		 }
-
+	echo "</table>";
+	echo '</div>';
 	echo '</body>';
 	echo '</html>';
 }
