@@ -47,7 +47,7 @@ function main () {
 	echo '<body onload="loadDoc()">';
 
 	//clickable link to the code you just pushed to GitHub.
-	echo '<a target="_blank" href="https://cis355withbinh.000webhostapp.com/assignment18/covidapi.php">Link to source code Github </a> <br><br>';
+	echo '<a target="_blank" href="https://github.com/bddang23/covidAPI/blob/main/cis355api.php">Link to source code Github </a> <br><br>';
 	
 	$death_arr = array_slice($death_arr,0,10); //  top 10 highest number of deaths.
 	//print_r($death_arr);
